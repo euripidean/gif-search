@@ -3,3 +3,13 @@
 <input type="text" name="term">
 <button type="submit">Search</button>
 </form>
+
+{{#each gifs}}
+<div class="tenor-gif-embed" data-postid="{{this.id}}" data-share-method="host" data-width="400px" data-aspect-ratio="1.0">
+    <a href="{{this.itemurl}}"></a>
+    <a href="{{this.url}}">GIF via Tenor</a>
+    </div>
+<script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+{{/each}}
+
+
